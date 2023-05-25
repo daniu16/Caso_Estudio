@@ -7,17 +7,19 @@ public class Operaciones
     protected String Nombre;
     protected String Autor;
     protected String Año;
-    protected Boolean Ediccion;
+    protected String Ediccion;
+    protected String Edicciondellibro;
     protected String Coleccion;
     //protected double resultado;
 
     //Contructor
-    public Operaciones(String Nombre, String Autor, String Año, boolean Ediccion, String Coleccion)
+    public Operaciones(String Nombre, String Autor, String Año, String Ediccion, String Edicciondellibro, String Coleccion)
     {
         this.Nombre = Nombre;
         this.Autor= Autor;
         this.Año= Año;
         this.Ediccion= Ediccion;
+        this.Edicciondellibro = Edicciondellibro;
         this.Coleccion= Coleccion;
         //this.resultado= resultados;
     }

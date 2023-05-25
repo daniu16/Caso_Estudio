@@ -3,7 +3,7 @@ package modelo;
 public class Aut extends Operaciones {
 
     public Aut(String autor) {
-        super("", autor, "", false, "");
+        super("", autor, "", "","", "");
     }
 
     public String getAutor() {

@@ -4,7 +4,7 @@ public class Añ extends Operaciones{
 
     public Añ(String año)
     {
-        super("", "", año, false, "");
+        super("", "", año, "","", "");
     }
 
     public String getAño(){
