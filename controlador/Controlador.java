@@ -25,8 +25,10 @@ public class Controlador {
             }else{
             String EColecciondellibro = JOptionPane.showInputDialog(null);
             }
-            
-            // Lógica para procesar los datos del libro (aquí puedes agregar la lógica deseada)
+
+
+
+            // Lógica para procesar los datos del libro 
             confirmacion = JOptionPane.showInputDialog("Desea agregar otro libro (si/no): ");
         }
     }
