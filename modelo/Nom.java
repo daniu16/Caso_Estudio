@@ -9,7 +9,7 @@ public class Nom extends Operaciones {
         return Nombre;
     }
 
-    public String getResultados() {
+    public String getResultadosNombre() {
         return getNombre();
     }
 }

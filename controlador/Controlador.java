@@ -1,6 +1,13 @@
 package controlador;
 
 import javax.swing.JOptionPane;
+import modelo.Nom;
+import modelo.Añ;
+import modelo.Aut;
+import modelo.Col;
+import modelo.Edicc;
+import modelo.Edicclib;
+import modelo.LibCol;
 
 public class Controlador {
 
@@ -26,8 +33,15 @@ public class Controlador {
             String EColecciondellibro = JOptionPane.showInputDialog(null);
             }
 
+            Nom miNombre = new Nom(Nombre);
+            miNombre.getResultadosNombre();
+            JOptionPane.showMessageDialog(null, "El nombre del libro es: " + miNombre.getResultadosNombre());
 
+            Aut miAutor = new Aut(Autor);
+            miAutor.getResultadosAutor();
+            JOptionPane.showMessageDialog(null,"El autor o autores del libro es:" + miAutor.getResultadosAutor());
 
+            
             // Lógica para procesar los datos del libro 
             confirmacion = JOptionPane.showInputDialog("Desea agregar otro libro (si/no): ");
         }

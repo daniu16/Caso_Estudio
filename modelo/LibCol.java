@@ -9,7 +9,7 @@ public class LibCol extends Operaciones{
         return Colecciondellibro;
     }
 
-    public String getResultados() {
+    public String getResultadosColecciondellibro() {
         return getColecciondellibro();
     }
 }

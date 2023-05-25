@@ -12,7 +12,7 @@ public class Edicclib extends Operaciones{
         return Edicciondellibro;
     }
 
-    public String getResultado()
+    public String getResultadoEdicciondellibro()
     {
         return getEdicciondellibro();
     }

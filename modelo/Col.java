@@ -9,7 +9,7 @@ public class Col extends Operaciones{
         return Coleccion;
     }
 
-    public String getResultados() {
+    public String getResultadosColeccion() {
         return getColeccion();
     }
     

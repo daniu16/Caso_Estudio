@@ -10,7 +10,7 @@ public class Aut extends Operaciones {
         return Autor;
     }
 
-    public String getResultados() {
+    public String getResultadosAutor() {
         return getAutor();
     }
     

@@ -11,7 +11,7 @@ public class Edicc extends Operaciones{
         return Ediccion;
     }
 
-    public String getResultado(){
+    public String getResultadoEdiccion(){
         return getEdiccion();
     }
 }
