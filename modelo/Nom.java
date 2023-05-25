@@ -2,7 +2,7 @@ package modelo;
 
 public class Nom extends Operaciones {
     public Nom(String nombre) {
-        super(nombre, "", "", "","", "");
+        super(nombre, "", "", "","", "","");
     }
 
     public String getNombre() {
