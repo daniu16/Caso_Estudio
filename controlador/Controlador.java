@@ -1,15 +1,44 @@
 package controlador;
 
-import javax.swing.JOptionPane;
-import modelo.Nom;
-import modelo.Aut;
-import modelo.Añ;
-import modelo.Edicc;
-import modelo.Edicclib;
-import modelo.LibCol;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Controlador {
+import modelo.Operaciones;
+import vista.VentanaPrincipal;
 
+public class Controlador implements ActionListener {
+
+    private VentanaPrincipal vP;
+    private Operaciones miOperaciones;
+
+    public Controlador(VentanaPrincipal vP, Operaciones pOperaciones) {
+        this.vP = vP;
+        this.miOperaciones = pOperaciones;
+        this.vP.mCalcular.agregarEscuchadores(this);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String event = e.getActionCommand();
+
+        if (event.equals("calcular")) {
+            // Realizar acciones para el evento "calcular"
+        }
+        
+        if (event.equals("salir")) {
+            System.exit(0);
+        }
+
+        if (event.equals("borrar")) {
+            this.vP.mCalcular.borrar();
+            
+        }
+    }
+}
+
+
+    /*
+     * 
     public static void main(String[] args) {
 
         String confirmacion = "si";
@@ -58,4 +87,4 @@ public class Controlador {
             confirmacion = JOptionPane.showInputDialog("Desea agregar otro libro (si/no): ");
         }
     }
-}
+     */
